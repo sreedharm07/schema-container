@@ -4,4 +4,4 @@ RUN          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o 
 COPY         mongo.repo /etc/yum.repos.d/mongo.repo
 RUN          dnf install mongodb-org-shell -y
 COPY         run.sh /
-ENTRYPOINT   ["bash", "run.sh"]
+ENTRYPOINT   ["bash", "/run.sh"]
