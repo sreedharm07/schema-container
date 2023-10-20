@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 git clone https://github.com/sreedharm07/$COMPONENT.git
 cd $COMPONENT/schema
